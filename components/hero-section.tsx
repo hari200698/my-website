@@ -2,6 +2,7 @@
 
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Mail } from "lucide-react"
+import Image from "next/image"
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -54,10 +55,13 @@ export function HeroSection() {
             <div className="relative">
               <div className="w-80 h-80 rounded-full gradient-primary p-1">
                 <div className="w-full h-full rounded-full bg-background flex items-center justify-center">
-                  <img
-                    src="/professional-headshot-of-a-data-engineer.jpg"
+                  <Image
+                    src="/placeholder-user.jpg"
                     alt="Harisankar Kartha"
+                    width={288}
+                    height={288}
                     className="w-72 h-72 rounded-full object-cover"
+                    priority
                   />
                 </div>
               </div>
